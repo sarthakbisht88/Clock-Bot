@@ -1,0 +1,80 @@
+[30;1m2026-11-08 14:25:05[0m [34;1mINFO    [0m [35mdiscord.client[0m logging in using static token
+[30;1m2026-11-08 14:25:05[0m [34;1mINFO    [0m [35mdiscord.client[0m logging in using static token
+[30;1m2026-11-08 14:25:07[0m [34;1mINFO    [0m [35mroot[0m ✅ Slash commands synced
+[30;1m2026-11-08 14:25:07[0m [34;1mINFO    [0m [35mdiscord.gateway[0m Shard ID None has connected to Gateway (Session ID: 2cfb1dc198b54a8f6e0a92b1a7793ed0).
+[30;1m2026-11-08 14:25:07[0m [34;1mINFO    [0m [35mdiscord.gateway[0m Shard ID None has connected to Gateway (Session ID: 2cfb1dc198b54a8f6e0a92b1a7793ed0).
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:davey is not installed, voice will NOT be supported
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:root:Slash commands synced
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 87037dea85de610d2f73ecf68d1aeb31).
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:davey is not installed, voice will NOT be supported
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:root:Slash commands synced
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 897d0a63d546917148e6fc66175776b8).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 897d0a63d546917148e6fc66175776b8.
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:davey is not installed, voice will NOT be supported
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:root:Slash commands synced
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: f202e64dfbf7b95e452baae112357eab).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f202e64dfbf7b95e452baae112357eab.
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:davey is not installed, voice will NOT be supported
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:root:Slash commands synced
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 3363f8ff8d5dedc563f5e6b6378459c5).
+ERROR:discord.ext.tasks:Handling exception in internal background task rotate_status. Retrying in 1.62s
+Traceback (most recent call last):
+  File "/home/container/.local/lib/python3.11/site-packages/discord/ext/tasks/__init__.py", line 247, in _loop
+    await self.coro(*args, **kwargs)
+  File "/home/container/main.py", line 249, in rotate_status
+    await bot.change_presence(activity=current_status)
+  File "/home/container/.local/lib/python3.11/site-packages/discord/client.py", line 2156, in change_presence
+    await self.ws.change_presence(activity=activity, status=status_str)
+  File "/home/container/.local/lib/python3.11/site-packages/discord/gateway.py", line 723, in change_presence
+    await self.send(sent)
+  File "/home/container/.local/lib/python3.11/site-packages/discord/gateway.py", line 677, in send
+    await self.socket.send_str(data)
+  File "/home/container/.local/lib/python3.11/site-packages/aiohttp/client_ws.py", line 289, in send_str
+    await self._writer.send_frame(
+  File "/home/container/.local/lib/python3.11/site-packages/aiohttp/_websocket/writer.py", line 78, in send_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
+WARNING:discord.gateway:Can't keep up, shard ID None websocket is 20.4s behind.
+WARNING:discord.gateway:Can't keep up, shard ID None websocket is 20.5s behind.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 3363f8ff8d5dedc563f5e6b6378459c5.
